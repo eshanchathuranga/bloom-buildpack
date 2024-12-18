@@ -1,0 +1,12 @@
+[buildpack]
+name = "Node.js Buildpack"  # Give your buildpack a descriptive name
+
+  [publish.Ignore]
+  files = [
+    "node_modules/",  # Exclude the node_modules directory
+    "test/",          # Exclude test directories
+    ".gitignore",     # Exclude .gitignore
+    ".travis.yml",    # Exclude CI configuration files
+    "README.md",      # Exclude README files
+    "LICENSE"         # Exclude license files
+  ]
